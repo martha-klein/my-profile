@@ -1,0 +1,1451 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)https://learn.lewagon.com/c/2186/b/324 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">.turbolinks-progress-bar {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: #0076ff;
+  z-index: 9999;
+  transition: width 300ms ease-out, opacity 150ms 150ms ease-in;
+  transform: translate3d(0, 0, 0);
+}</style><style type="text/css" data-tag-name="trix-editor">trix-editor {
+  display: block;
+}
+
+trix-editor:empty:not(:focus)::before {
+  content: attr(placeholder);
+  color: graytext;
+  cursor: text;
+  pointer-events: none;
+}
+
+trix-editor a[contenteditable=false] {
+  cursor: text;
+}
+
+trix-editor img {
+  max-width: 100%;
+  height: auto;
+}
+
+trix-editor [data-trix-attachment] figcaption textarea {
+  resize: none;
+}
+
+trix-editor [data-trix-attachment] figcaption textarea.trix-autoresize-clone {
+  position: absolute;
+  left: -9999px;
+  max-height: 0px;
+}
+
+trix-editor [data-trix-attachment] figcaption[data-trix-placeholder]:empty::before {
+  content: attr(data-trix-placeholder);
+  color: graytext;
+}
+
+trix-editor [data-trix-cursor-target] {
+  display: inline-block !important;
+  width: 1px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+}
+
+trix-editor [data-trix-cursor-target=left] {
+  vertical-align: top !important;
+  margin-left: -1px !important;
+}
+
+trix-editor [data-trix-cursor-target=right] {
+  vertical-align: bottom !important;
+  margin-right: -1px !important;
+}</style><style type="text/css" data-tag-name="trix-toolbar">trix-toolbar {
+  display: block;
+}
+
+trix-toolbar {
+  white-space: nowrap;
+}
+
+trix-toolbar [data-trix-dialog] {
+  display: none;
+}
+
+trix-toolbar [data-trix-dialog][data-trix-active] {
+  display: block;
+}
+
+trix-toolbar [data-trix-dialog] [data-trix-validate]:invalid {
+  background-color: #ffdddd;
+}</style>
+    
+    
+    
+    
+
+    
+    <link rel="stylesheet" media="all" href="./Media queries in CSS_files/application-7d12d437f75e346d8e86860619aa8d3cae76f0fddd159d66dd43182f4c9d63f5.css" data-turbolinks-track="reload">
+    <script src="./Media queries in CSS_files/application-1f92def5c4a95da1613d.js" data-turbolinks-track="reload" defer="defer"></script>
+    
+    <link rel="stylesheet" media="all" href="./Media queries in CSS_files/application-bb4fd4ac.css">
+    
+  <style>@-webkit-keyframes swal2-show{0%{-webkit-transform:scale(.7);transform:scale(.7)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}100%{-webkit-transform:scale(1);transform:scale(1)}}@keyframes swal2-show{0%{-webkit-transform:scale(.7);transform:scale(.7)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}100%{-webkit-transform:scale(1);transform:scale(1)}}@-webkit-keyframes swal2-hide{0%{-webkit-transform:scale(1);transform:scale(1);opacity:1}100%{-webkit-transform:scale(.5);transform:scale(.5);opacity:0}}@keyframes swal2-hide{0%{-webkit-transform:scale(1);transform:scale(1);opacity:1}100%{-webkit-transform:scale(.5);transform:scale(.5);opacity:0}}@-webkit-keyframes swal2-animate-success-line-tip{0%{top:1.1875em;left:.0625em;width:0}54%{top:1.0625em;left:.125em;width:0}70%{top:2.1875em;left:-.375em;width:3.125em}84%{top:3em;left:1.3125em;width:1.0625em}100%{top:2.8125em;left:.875em;width:1.5625em}}@keyframes swal2-animate-success-line-tip{0%{top:1.1875em;left:.0625em;width:0}54%{top:1.0625em;left:.125em;width:0}70%{top:2.1875em;left:-.375em;width:3.125em}84%{top:3em;left:1.3125em;width:1.0625em}100%{top:2.8125em;left:.875em;width:1.5625em}}@-webkit-keyframes swal2-animate-success-line-long{0%{top:3.375em;right:2.875em;width:0}65%{top:3.375em;right:2.875em;width:0}84%{top:2.1875em;right:0;width:3.4375em}100%{top:2.375em;right:.5em;width:2.9375em}}@keyframes swal2-animate-success-line-long{0%{top:3.375em;right:2.875em;width:0}65%{top:3.375em;right:2.875em;width:0}84%{top:2.1875em;right:0;width:3.4375em}100%{top:2.375em;right:.5em;width:2.9375em}}@-webkit-keyframes swal2-rotate-success-circular-line{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}100%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@keyframes swal2-rotate-success-circular-line{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}100%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@-webkit-keyframes swal2-animate-error-x-mark{0%{margin-top:1.625em;-webkit-transform:scale(.4);transform:scale(.4);opacity:0}50%{margin-top:1.625em;-webkit-transform:scale(.4);transform:scale(.4);opacity:0}80%{margin-top:-.375em;-webkit-transform:scale(1.15);transform:scale(1.15)}100%{margin-top:0;-webkit-transform:scale(1);transform:scale(1);opacity:1}}@keyframes swal2-animate-error-x-mark{0%{margin-top:1.625em;-webkit-transform:scale(.4);transform:scale(.4);opacity:0}50%{margin-top:1.625em;-webkit-transform:scale(.4);transform:scale(.4);opacity:0}80%{margin-top:-.375em;-webkit-transform:scale(1.15);transform:scale(1.15)}100%{margin-top:0;-webkit-transform:scale(1);transform:scale(1);opacity:1}}@-webkit-keyframes swal2-animate-error-icon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}100%{-webkit-transform:rotateX(0);transform:rotateX(0);opacity:1}}@keyframes swal2-animate-error-icon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}100%{-webkit-transform:rotateX(0);transform:rotateX(0);opacity:1}}body.swal2-toast-shown .swal2-container{background-color:transparent}body.swal2-toast-shown .swal2-container.swal2-shown{background-color:transparent}body.swal2-toast-shown .swal2-container.swal2-top{top:0;right:auto;bottom:auto;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}body.swal2-toast-shown .swal2-container.swal2-top-end,body.swal2-toast-shown .swal2-container.swal2-top-right{top:0;right:0;bottom:auto;left:auto}body.swal2-toast-shown .swal2-container.swal2-top-left,body.swal2-toast-shown .swal2-container.swal2-top-start{top:0;right:auto;bottom:auto;left:0}body.swal2-toast-shown .swal2-container.swal2-center-left,body.swal2-toast-shown .swal2-container.swal2-center-start{top:50%;right:auto;bottom:auto;left:0;-webkit-transform:translateY(-50%);transform:translateY(-50%)}body.swal2-toast-shown .swal2-container.swal2-center{top:50%;right:auto;bottom:auto;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}body.swal2-toast-shown .swal2-container.swal2-center-end,body.swal2-toast-shown .swal2-container.swal2-center-right{top:50%;right:0;bottom:auto;left:auto;-webkit-transform:translateY(-50%);transform:translateY(-50%)}body.swal2-toast-shown .swal2-container.swal2-bottom-left,body.swal2-toast-shown .swal2-container.swal2-bottom-start{top:auto;right:auto;bottom:0;left:0}body.swal2-toast-shown .swal2-container.swal2-bottom{top:auto;right:auto;bottom:0;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}body.swal2-toast-shown .swal2-container.swal2-bottom-end,body.swal2-toast-shown .swal2-container.swal2-bottom-right{top:auto;right:0;bottom:0;left:auto}body.swal2-toast-column .swal2-toast{flex-direction:column;align-items:stretch}body.swal2-toast-column .swal2-toast .swal2-actions{flex:1;align-self:stretch;height:2.2em;margin-top:.3125em}body.swal2-toast-column .swal2-toast .swal2-loading{justify-content:center}body.swal2-toast-column .swal2-toast .swal2-input{height:2em;margin:.3125em auto;font-size:1em}body.swal2-toast-column .swal2-toast .swal2-validation-message{font-size:1em}.swal2-popup.swal2-toast{flex-direction:row;align-items:center;width:auto;padding:.625em;box-shadow:0 0 .625em #d9d9d9;overflow-y:hidden}.swal2-popup.swal2-toast .swal2-header{flex-direction:row}.swal2-popup.swal2-toast .swal2-title{flex-grow:1;justify-content:flex-start;margin:0 .6em;font-size:1em}.swal2-popup.swal2-toast .swal2-footer{margin:.5em 0 0;padding:.5em 0 0;font-size:.8em}.swal2-popup.swal2-toast .swal2-close{position:initial;width:.8em;height:.8em;line-height:.8}.swal2-popup.swal2-toast .swal2-content{justify-content:flex-start;font-size:1em}.swal2-popup.swal2-toast .swal2-icon{width:2em;min-width:2em;height:2em;margin:0}.swal2-popup.swal2-toast .swal2-icon-text{font-size:2em;font-weight:700;line-height:1em}.swal2-popup.swal2-toast .swal2-icon.swal2-success .swal2-success-ring{width:2em;height:2em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line]{top:.875em;width:1.375em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left]{left:.3125em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right]{right:.3125em}.swal2-popup.swal2-toast .swal2-actions{height:auto;margin:0 .3125em}.swal2-popup.swal2-toast .swal2-styled{margin:0 .3125em;padding:.3125em .625em;font-size:1em}.swal2-popup.swal2-toast .swal2-styled:focus{box-shadow:0 0 0 .0625em #fff,0 0 0 .125em rgba(50,100,150,.4)}.swal2-popup.swal2-toast .swal2-success{border-color:#a5dc86}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line]{position:absolute;width:2em;height:2.8125em;-webkit-transform:rotate(45deg);transform:rotate(45deg);border-radius:50%}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=left]{top:-.25em;left:-.9375em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:2em 2em;transform-origin:2em 2em;border-radius:4em 0 0 4em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=right]{top:-.25em;left:.9375em;-webkit-transform-origin:0 2em;transform-origin:0 2em;border-radius:0 4em 4em 0}.swal2-popup.swal2-toast .swal2-success .swal2-success-ring{width:2em;height:2em}.swal2-popup.swal2-toast .swal2-success .swal2-success-fix{top:0;left:.4375em;width:.4375em;height:2.6875em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line]{height:.3125em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=tip]{top:1.125em;left:.1875em;width:.75em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=long]{top:.9375em;right:.1875em;width:1.375em}.swal2-popup.swal2-toast.swal2-show{-webkit-animation:showSweetToast .5s;animation:showSweetToast .5s}.swal2-popup.swal2-toast.swal2-hide{-webkit-animation:hideSweetToast .2s forwards;animation:hideSweetToast .2s forwards}.swal2-popup.swal2-toast .swal2-animate-success-icon .swal2-success-line-tip{-webkit-animation:animate-toast-success-tip .75s;animation:animate-toast-success-tip .75s}.swal2-popup.swal2-toast .swal2-animate-success-icon .swal2-success-line-long{-webkit-animation:animate-toast-success-long .75s;animation:animate-toast-success-long .75s}@-webkit-keyframes showSweetToast{0%{-webkit-transform:translateY(-.625em) rotateZ(2deg);transform:translateY(-.625em) rotateZ(2deg);opacity:0}33%{-webkit-transform:translateY(0) rotateZ(-2deg);transform:translateY(0) rotateZ(-2deg);opacity:.5}66%{-webkit-transform:translateY(.3125em) rotateZ(2deg);transform:translateY(.3125em) rotateZ(2deg);opacity:.7}100%{-webkit-transform:translateY(0) rotateZ(0);transform:translateY(0) rotateZ(0);opacity:1}}@keyframes showSweetToast{0%{-webkit-transform:translateY(-.625em) rotateZ(2deg);transform:translateY(-.625em) rotateZ(2deg);opacity:0}33%{-webkit-transform:translateY(0) rotateZ(-2deg);transform:translateY(0) rotateZ(-2deg);opacity:.5}66%{-webkit-transform:translateY(.3125em) rotateZ(2deg);transform:translateY(.3125em) rotateZ(2deg);opacity:.7}100%{-webkit-transform:translateY(0) rotateZ(0);transform:translateY(0) rotateZ(0);opacity:1}}@-webkit-keyframes hideSweetToast{0%{opacity:1}33%{opacity:.5}100%{-webkit-transform:rotateZ(1deg);transform:rotateZ(1deg);opacity:0}}@keyframes hideSweetToast{0%{opacity:1}33%{opacity:.5}100%{-webkit-transform:rotateZ(1deg);transform:rotateZ(1deg);opacity:0}}@-webkit-keyframes animate-toast-success-tip{0%{top:.5625em;left:.0625em;width:0}54%{top:.125em;left:.125em;width:0}70%{top:.625em;left:-.25em;width:1.625em}84%{top:1.0625em;left:.75em;width:.5em}100%{top:1.125em;left:.1875em;width:.75em}}@keyframes animate-toast-success-tip{0%{top:.5625em;left:.0625em;width:0}54%{top:.125em;left:.125em;width:0}70%{top:.625em;left:-.25em;width:1.625em}84%{top:1.0625em;left:.75em;width:.5em}100%{top:1.125em;left:.1875em;width:.75em}}@-webkit-keyframes animate-toast-success-long{0%{top:1.625em;right:1.375em;width:0}65%{top:1.25em;right:.9375em;width:0}84%{top:.9375em;right:0;width:1.125em}100%{top:.9375em;right:.1875em;width:1.375em}}@keyframes animate-toast-success-long{0%{top:1.625em;right:1.375em;width:0}65%{top:1.25em;right:.9375em;width:0}84%{top:.9375em;right:0;width:1.125em}100%{top:.9375em;right:.1875em;width:1.375em}}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown){overflow:hidden}body.swal2-height-auto{height:auto!important}body.swal2-no-backdrop .swal2-shown{top:auto;right:auto;bottom:auto;left:auto;background-color:transparent}body.swal2-no-backdrop .swal2-shown>.swal2-modal{box-shadow:0 0 10px rgba(0,0,0,.4)}body.swal2-no-backdrop .swal2-shown.swal2-top{top:0;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}body.swal2-no-backdrop .swal2-shown.swal2-top-left,body.swal2-no-backdrop .swal2-shown.swal2-top-start{top:0;left:0}body.swal2-no-backdrop .swal2-shown.swal2-top-end,body.swal2-no-backdrop .swal2-shown.swal2-top-right{top:0;right:0}body.swal2-no-backdrop .swal2-shown.swal2-center{top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}body.swal2-no-backdrop .swal2-shown.swal2-center-left,body.swal2-no-backdrop .swal2-shown.swal2-center-start{top:50%;left:0;-webkit-transform:translateY(-50%);transform:translateY(-50%)}body.swal2-no-backdrop .swal2-shown.swal2-center-end,body.swal2-no-backdrop .swal2-shown.swal2-center-right{top:50%;right:0;-webkit-transform:translateY(-50%);transform:translateY(-50%)}body.swal2-no-backdrop .swal2-shown.swal2-bottom{bottom:0;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}body.swal2-no-backdrop .swal2-shown.swal2-bottom-left,body.swal2-no-backdrop .swal2-shown.swal2-bottom-start{bottom:0;left:0}body.swal2-no-backdrop .swal2-shown.swal2-bottom-end,body.swal2-no-backdrop .swal2-shown.swal2-bottom-right{right:0;bottom:0}.swal2-container{display:flex;position:fixed;top:0;right:0;bottom:0;left:0;flex-direction:row;align-items:center;justify-content:center;padding:10px;background-color:transparent;z-index:1060;overflow-x:hidden;-webkit-overflow-scrolling:touch}.swal2-container.swal2-top{align-items:flex-start}.swal2-container.swal2-top-left,.swal2-container.swal2-top-start{align-items:flex-start;justify-content:flex-start}.swal2-container.swal2-top-end,.swal2-container.swal2-top-right{align-items:flex-start;justify-content:flex-end}.swal2-container.swal2-center{align-items:center}.swal2-container.swal2-center-left,.swal2-container.swal2-center-start{align-items:center;justify-content:flex-start}.swal2-container.swal2-center-end,.swal2-container.swal2-center-right{align-items:center;justify-content:flex-end}.swal2-container.swal2-bottom{align-items:flex-end}.swal2-container.swal2-bottom-left,.swal2-container.swal2-bottom-start{align-items:flex-end;justify-content:flex-start}.swal2-container.swal2-bottom-end,.swal2-container.swal2-bottom-right{align-items:flex-end;justify-content:flex-end}.swal2-container.swal2-grow-fullscreen>.swal2-modal{display:flex!important;flex:1;align-self:stretch;justify-content:center}.swal2-container.swal2-grow-row>.swal2-modal{display:flex!important;flex:1;align-content:center;justify-content:center}.swal2-container.swal2-grow-column{flex:1;flex-direction:column}.swal2-container.swal2-grow-column.swal2-bottom,.swal2-container.swal2-grow-column.swal2-center,.swal2-container.swal2-grow-column.swal2-top{align-items:center}.swal2-container.swal2-grow-column.swal2-bottom-left,.swal2-container.swal2-grow-column.swal2-bottom-start,.swal2-container.swal2-grow-column.swal2-center-left,.swal2-container.swal2-grow-column.swal2-center-start,.swal2-container.swal2-grow-column.swal2-top-left,.swal2-container.swal2-grow-column.swal2-top-start{align-items:flex-start}.swal2-container.swal2-grow-column.swal2-bottom-end,.swal2-container.swal2-grow-column.swal2-bottom-right,.swal2-container.swal2-grow-column.swal2-center-end,.swal2-container.swal2-grow-column.swal2-center-right,.swal2-container.swal2-grow-column.swal2-top-end,.swal2-container.swal2-grow-column.swal2-top-right{align-items:flex-end}.swal2-container.swal2-grow-column>.swal2-modal{display:flex!important;flex:1;align-content:center;justify-content:center}.swal2-container:not(.swal2-top):not(.swal2-top-start):not(.swal2-top-end):not(.swal2-top-left):not(.swal2-top-right):not(.swal2-center-start):not(.swal2-center-end):not(.swal2-center-left):not(.swal2-center-right):not(.swal2-bottom):not(.swal2-bottom-start):not(.swal2-bottom-end):not(.swal2-bottom-left):not(.swal2-bottom-right):not(.swal2-grow-fullscreen)>.swal2-modal{margin:auto}@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.swal2-container .swal2-modal{margin:0!important}}.swal2-container.swal2-fade{transition:background-color .1s}.swal2-container.swal2-shown{background-color:rgba(0,0,0,.4)}.swal2-popup{display:none;position:relative;flex-direction:column;justify-content:center;width:32em;max-width:100%;padding:1.25em;border-radius:.3125em;background:#fff;font-family:inherit;font-size:1rem;box-sizing:border-box}.swal2-popup:focus{outline:0}.swal2-popup.swal2-loading{overflow-y:hidden}.swal2-popup .swal2-header{display:flex;flex-direction:column;align-items:center}.swal2-popup .swal2-title{display:block;position:relative;max-width:100%;margin:0 0 .4em;padding:0;color:#595959;font-size:1.875em;font-weight:600;text-align:center;text-transform:none;word-wrap:break-word}.swal2-popup .swal2-actions{flex-wrap:wrap;align-items:center;justify-content:center;margin:1.25em auto 0;z-index:1}.swal2-popup .swal2-actions:not(.swal2-loading) .swal2-styled[disabled]{opacity:.4}.swal2-popup .swal2-actions:not(.swal2-loading) .swal2-styled:hover{background-image:linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1))}.swal2-popup .swal2-actions:not(.swal2-loading) .swal2-styled:active{background-image:linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2))}.swal2-popup .swal2-actions.swal2-loading .swal2-styled.swal2-confirm{width:2.5em;height:2.5em;margin:.46875em;padding:0;border:.25em solid transparent;border-radius:100%;border-color:transparent;background-color:transparent!important;color:transparent;cursor:default;box-sizing:border-box;-webkit-animation:swal2-rotate-loading 1.5s linear 0s infinite normal;animation:swal2-rotate-loading 1.5s linear 0s infinite normal;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.swal2-popup .swal2-actions.swal2-loading .swal2-styled.swal2-cancel{margin-right:30px;margin-left:30px}.swal2-popup .swal2-actions.swal2-loading :not(.swal2-styled).swal2-confirm::after{display:inline-block;width:15px;height:15px;margin-left:5px;border:3px solid #999;border-radius:50%;border-right-color:transparent;box-shadow:1px 1px 1px #fff;content:'';-webkit-animation:swal2-rotate-loading 1.5s linear 0s infinite normal;animation:swal2-rotate-loading 1.5s linear 0s infinite normal}.swal2-popup .swal2-styled{margin:.3125em;padding:.625em 2em;font-weight:500;box-shadow:none}.swal2-popup .swal2-styled:not([disabled]){cursor:pointer}.swal2-popup .swal2-styled.swal2-confirm{border:0;border-radius:.25em;background:initial;background-color:#3085d6;color:#fff;font-size:1.0625em}.swal2-popup .swal2-styled.swal2-cancel{border:0;border-radius:.25em;background:initial;background-color:#aaa;color:#fff;font-size:1.0625em}.swal2-popup .swal2-styled:focus{outline:0;box-shadow:0 0 0 2px #fff,0 0 0 4px rgba(50,100,150,.4)}.swal2-popup .swal2-styled::-moz-focus-inner{border:0}.swal2-popup .swal2-footer{justify-content:center;margin:1.25em 0 0;padding:1em 0 0;border-top:1px solid #eee;color:#545454;font-size:1em}.swal2-popup .swal2-image{max-width:100%;margin:1.25em auto}.swal2-popup .swal2-close{position:absolute;top:0;right:0;justify-content:center;width:1.2em;height:1.2em;padding:0;transition:color .1s ease-out;border:none;border-radius:0;outline:initial;background:0 0;color:#ccc;font-family:serif;font-size:2.5em;line-height:1.2;cursor:pointer;overflow:hidden}.swal2-popup .swal2-close:hover{-webkit-transform:none;transform:none;color:#f27474}.swal2-popup>.swal2-checkbox,.swal2-popup>.swal2-file,.swal2-popup>.swal2-input,.swal2-popup>.swal2-radio,.swal2-popup>.swal2-select,.swal2-popup>.swal2-textarea{display:none}.swal2-popup .swal2-content{justify-content:center;margin:0;padding:0;color:#545454;font-size:1.125em;font-weight:300;line-height:normal;z-index:1;word-wrap:break-word}.swal2-popup #swal2-content{text-align:center}.swal2-popup .swal2-checkbox,.swal2-popup .swal2-file,.swal2-popup .swal2-input,.swal2-popup .swal2-radio,.swal2-popup .swal2-select,.swal2-popup .swal2-textarea{margin:1em auto}.swal2-popup .swal2-file,.swal2-popup .swal2-input,.swal2-popup .swal2-textarea{width:100%;transition:border-color .3s,box-shadow .3s;border:1px solid #d9d9d9;border-radius:.1875em;font-size:1.125em;box-shadow:inset 0 1px 1px rgba(0,0,0,.06);box-sizing:border-box}.swal2-popup .swal2-file.swal2-inputerror,.swal2-popup .swal2-input.swal2-inputerror,.swal2-popup .swal2-textarea.swal2-inputerror{border-color:#f27474!important;box-shadow:0 0 2px #f27474!important}.swal2-popup .swal2-file:focus,.swal2-popup .swal2-input:focus,.swal2-popup .swal2-textarea:focus{border:1px solid #b4dbed;outline:0;box-shadow:0 0 3px #c4e6f5}.swal2-popup .swal2-file::-webkit-input-placeholder,.swal2-popup .swal2-input::-webkit-input-placeholder,.swal2-popup .swal2-textarea::-webkit-input-placeholder{color:#ccc}.swal2-popup .swal2-file:-ms-input-placeholder,.swal2-popup .swal2-input:-ms-input-placeholder,.swal2-popup .swal2-textarea:-ms-input-placeholder{color:#ccc}.swal2-popup .swal2-file::-ms-input-placeholder,.swal2-popup .swal2-input::-ms-input-placeholder,.swal2-popup .swal2-textarea::-ms-input-placeholder{color:#ccc}.swal2-popup .swal2-file::placeholder,.swal2-popup .swal2-input::placeholder,.swal2-popup .swal2-textarea::placeholder{color:#ccc}.swal2-popup .swal2-range input{width:80%}.swal2-popup .swal2-range output{width:20%;font-weight:600;text-align:center}.swal2-popup .swal2-range input,.swal2-popup .swal2-range output{height:2.625em;margin:1em auto;padding:0;font-size:1.125em;line-height:2.625em}.swal2-popup .swal2-input{height:2.625em;padding:0 .75em}.swal2-popup .swal2-input[type=number]{max-width:10em}.swal2-popup .swal2-file{font-size:1.125em}.swal2-popup .swal2-textarea{height:6.75em;padding:.75em}.swal2-popup .swal2-select{min-width:50%;max-width:100%;padding:.375em .625em;color:#545454;font-size:1.125em}.swal2-popup .swal2-checkbox,.swal2-popup .swal2-radio{align-items:center;justify-content:center}.swal2-popup .swal2-checkbox label,.swal2-popup .swal2-radio label{margin:0 .6em;font-size:1.125em}.swal2-popup .swal2-checkbox input,.swal2-popup .swal2-radio input{margin:0 .4em}.swal2-popup .swal2-validation-message{display:none;align-items:center;justify-content:center;padding:.625em;background:#f0f0f0;color:#666;font-size:1em;font-weight:300;overflow:hidden}.swal2-popup .swal2-validation-message::before{display:inline-block;width:1.5em;min-width:1.5em;height:1.5em;margin:0 .625em;border-radius:50%;background-color:#f27474;color:#fff;font-weight:600;line-height:1.5em;text-align:center;content:'!';zoom:normal}@supports (-ms-accelerator:true){.swal2-range input{width:100%!important}.swal2-range output{display:none}}@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.swal2-range input{width:100%!important}.swal2-range output{display:none}}@-moz-document url-prefix(){.swal2-close:focus{outline:2px solid rgba(50,100,150,.4)}}.swal2-icon{position:relative;justify-content:center;width:5em;height:5em;margin:1.25em auto 1.875em;border:.25em solid transparent;border-radius:50%;line-height:5em;cursor:default;box-sizing:content-box;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;zoom:normal}.swal2-icon-text{font-size:3.75em}.swal2-icon.swal2-error{border-color:#f27474}.swal2-icon.swal2-error .swal2-x-mark{position:relative;flex-grow:1}.swal2-icon.swal2-error [class^=swal2-x-mark-line]{display:block;position:absolute;top:2.3125em;width:2.9375em;height:.3125em;border-radius:.125em;background-color:#f27474}.swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left]{left:1.0625em;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right]{right:1em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal2-icon.swal2-warning{border-color:#facea8;color:#f8bb86}.swal2-icon.swal2-info{border-color:#9de0f6;color:#3fc3ee}.swal2-icon.swal2-question{border-color:#c9dae1;color:#87adbd}.swal2-icon.swal2-success{border-color:#a5dc86}.swal2-icon.swal2-success [class^=swal2-success-circular-line]{position:absolute;width:3.75em;height:7.5em;-webkit-transform:rotate(45deg);transform:rotate(45deg);border-radius:50%}.swal2-icon.swal2-success [class^=swal2-success-circular-line][class$=left]{top:-.4375em;left:-2.0635em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:3.75em 3.75em;transform-origin:3.75em 3.75em;border-radius:7.5em 0 0 7.5em}.swal2-icon.swal2-success [class^=swal2-success-circular-line][class$=right]{top:-.6875em;left:1.875em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:0 3.75em;transform-origin:0 3.75em;border-radius:0 7.5em 7.5em 0}.swal2-icon.swal2-success .swal2-success-ring{position:absolute;top:-.25em;left:-.25em;width:100%;height:100%;border:.25em solid rgba(165,220,134,.3);border-radius:50%;z-index:2;box-sizing:content-box}.swal2-icon.swal2-success .swal2-success-fix{position:absolute;top:.5em;left:1.625em;width:.4375em;height:5.625em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);z-index:1}.swal2-icon.swal2-success [class^=swal2-success-line]{display:block;position:absolute;height:.3125em;border-radius:.125em;background-color:#a5dc86;z-index:2}.swal2-icon.swal2-success [class^=swal2-success-line][class$=tip]{top:2.875em;left:.875em;width:1.5625em;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal2-icon.swal2-success [class^=swal2-success-line][class$=long]{top:2.375em;right:.5em;width:2.9375em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal2-progresssteps{align-items:center;margin:0 0 1.25em;padding:0;font-weight:600}.swal2-progresssteps li{display:inline-block;position:relative}.swal2-progresssteps .swal2-progresscircle{width:2em;height:2em;border-radius:2em;background:#3085d6;color:#fff;line-height:2em;text-align:center;z-index:20}.swal2-progresssteps .swal2-progresscircle:first-child{margin-left:0}.swal2-progresssteps .swal2-progresscircle:last-child{margin-right:0}.swal2-progresssteps .swal2-progresscircle.swal2-activeprogressstep{background:#3085d6}.swal2-progresssteps .swal2-progresscircle.swal2-activeprogressstep~.swal2-progresscircle{background:#add8e6}.swal2-progresssteps .swal2-progresscircle.swal2-activeprogressstep~.swal2-progressline{background:#add8e6}.swal2-progresssteps .swal2-progressline{width:2.5em;height:.4em;margin:0 -1px;background:#3085d6;z-index:10}[class^=swal2]{-webkit-tap-highlight-color:transparent}.swal2-show{-webkit-animation:swal2-show .3s;animation:swal2-show .3s}.swal2-show.swal2-noanimation{-webkit-animation:none;animation:none}.swal2-hide{-webkit-animation:swal2-hide .15s forwards;animation:swal2-hide .15s forwards}.swal2-hide.swal2-noanimation{-webkit-animation:none;animation:none}.swal2-rtl .swal2-close{right:auto;left:0}.swal2-animate-success-icon .swal2-success-line-tip{-webkit-animation:swal2-animate-success-line-tip .75s;animation:swal2-animate-success-line-tip .75s}.swal2-animate-success-icon .swal2-success-line-long{-webkit-animation:swal2-animate-success-line-long .75s;animation:swal2-animate-success-line-long .75s}.swal2-animate-success-icon .swal2-success-circular-line-right{-webkit-animation:swal2-rotate-success-circular-line 4.25s ease-in;animation:swal2-rotate-success-circular-line 4.25s ease-in}.swal2-animate-error-icon{-webkit-animation:swal2-animate-error-icon .5s;animation:swal2-animate-error-icon .5s}.swal2-animate-error-icon .swal2-x-mark{-webkit-animation:swal2-animate-error-x-mark .5s;animation:swal2-animate-error-x-mark .5s}@-webkit-keyframes swal2-rotate-loading{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes swal2-rotate-loading{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@media print{body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown){overflow-y:scroll!important}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown)>[aria-hidden=true]{display:none}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) .swal2-container{position:initial!important}}</style><script src="./Media queries in CSS_files/player.js" async=""></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><title>Media queries in CSS</title><meta name="csrf-param" content="authenticity_token"><meta name="csrf-token" content="WhZNLDQ59xqa4TtbLm/gn6ivfrLLg7RsZpaeHOBOd9Rgl03t7cQVVMkXoSsGN9O/BdLtmMgiSiz2dBmgbZZQtw=="><meta name="action-cable-url" content="/cable"><link rel="icon" type="image/png" href="https://d17tlt8o5zszqz.cloudfront.net/assets/favicon-78bfa184892a74357d550c1a209f52e7072af7e9e84ad1b000785f19bc1f8f22.png"></head>
+  <body><div hidden="" id="sprite-plyr"><!--?xml version="1.0" encoding="UTF-8"?--><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="plyr-airplay" viewBox="0 0 18 18"><path d="M16 1H2a1 1 0 00-1 1v10a1 1 0 001 1h3v-2H3V3h12v8h-2v2h3a1 1 0 001-1V2a1 1 0 00-1-1z"></path><path d="M4 17h10l-5-6z"></path></symbol><symbol id="plyr-captions-off" viewBox="0 0 18 18"><path d="M1 1c-.6 0-1 .4-1 1v11c0 .6.4 1 1 1h4.6l2.7 2.7c.2.2.4.3.7.3.3 0 .5-.1.7-.3l2.7-2.7H17c.6 0 1-.4 1-1V2c0-.6-.4-1-1-1H1zm4.52 10.15c1.99 0 3.01-1.32 3.28-2.41l-1.29-.39c-.19.66-.78 1.45-1.99 1.45-1.14 0-2.2-.83-2.2-2.34 0-1.61 1.12-2.37 2.18-2.37 1.23 0 1.78.75 1.95 1.43l1.3-.41C8.47 4.96 7.46 3.76 5.5 3.76c-1.9 0-3.61 1.44-3.61 3.7 0 2.26 1.65 3.69 3.63 3.69zm7.57 0c1.99 0 3.01-1.32 3.28-2.41l-1.29-.39c-.19.66-.78 1.45-1.99 1.45-1.14 0-2.2-.83-2.2-2.34 0-1.61 1.12-2.37 2.18-2.37 1.23 0 1.78.75 1.95 1.43l1.3-.41c-.28-1.15-1.29-2.35-3.25-2.35-1.9 0-3.61 1.44-3.61 3.7 0 2.26 1.65 3.69 3.63 3.69z" fill-rule="evenodd" fill-opacity=".5"></path></symbol><symbol id="plyr-captions-on" viewBox="0 0 18 18"><path d="M1 1c-.6 0-1 .4-1 1v11c0 .6.4 1 1 1h4.6l2.7 2.7c.2.2.4.3.7.3.3 0 .5-.1.7-.3l2.7-2.7H17c.6 0 1-.4 1-1V2c0-.6-.4-1-1-1H1zm4.52 10.15c1.99 0 3.01-1.32 3.28-2.41l-1.29-.39c-.19.66-.78 1.45-1.99 1.45-1.14 0-2.2-.83-2.2-2.34 0-1.61 1.12-2.37 2.18-2.37 1.23 0 1.78.75 1.95 1.43l1.3-.41C8.47 4.96 7.46 3.76 5.5 3.76c-1.9 0-3.61 1.44-3.61 3.7 0 2.26 1.65 3.69 3.63 3.69zm7.57 0c1.99 0 3.01-1.32 3.28-2.41l-1.29-.39c-.19.66-.78 1.45-1.99 1.45-1.14 0-2.2-.83-2.2-2.34 0-1.61 1.12-2.37 2.18-2.37 1.23 0 1.78.75 1.95 1.43l1.3-.41c-.28-1.15-1.29-2.35-3.25-2.35-1.9 0-3.61 1.44-3.61 3.7 0 2.26 1.65 3.69 3.63 3.69z" fill-rule="evenodd"></path></symbol><symbol id="plyr-download" viewBox="0 0 18 18"><path d="M9 13c.3 0 .5-.1.7-.3L15.4 7 14 5.6l-4 4V1H8v8.6l-4-4L2.6 7l5.7 5.7c.2.2.4.3.7.3zm-7 2h14v2H2z"></path></symbol><symbol id="plyr-enter-fullscreen" viewBox="0 0 18 18"><path d="M10 3h3.6l-4 4L11 8.4l4-4V8h2V1h-7zM7 9.6l-4 4V10H1v7h7v-2H4.4l4-4z"></path></symbol><symbol id="plyr-exit-fullscreen" viewBox="0 0 18 18"><path d="M1 12h3.6l-4 4L2 17.4l4-4V17h2v-7H1zM16 .6l-4 4V1h-2v7h7V6h-3.6l4-4z"></path></symbol><symbol id="plyr-fast-forward" viewBox="0 0 18 18"><path d="M7.875 7.171L0 1v16l7.875-6.171V17L18 9 7.875 1z"></path></symbol><symbol id="plyr-logo-vimeo" viewBox="0 0 18 18"><path d="M17 5.3c-.1 1.6-1.2 3.7-3.3 6.4-2.2 2.8-4 4.2-5.5 4.2-.9 0-1.7-.9-2.4-2.6C5 10.9 4.4 6 3 6c-.1 0-.5.3-1.2.8l-.8-1c.8-.7 3.5-3.4 4.7-3.5 1.2-.1 2 .7 2.3 2.5.3 2 .8 6.1 1.8 6.1.9 0 2.5-3.4 2.6-4 .1-.9-.3-1.9-2.3-1.1.8-2.6 2.3-3.8 4.5-3.8 1.7.1 2.5 1.2 2.4 3.3z"></path></symbol><symbol id="plyr-logo-youtube" viewBox="0 0 18 18"><path d="M16.8 5.8c-.2-1.3-.8-2.2-2.2-2.4C12.4 3 9 3 9 3s-3.4 0-5.6.4C2 3.6 1.3 4.5 1.2 5.8 1 7.1 1 9 1 9s0 1.9.2 3.2c.2 1.3.8 2.2 2.2 2.4C5.6 15 9 15 9 15s3.4 0 5.6-.4c1.4-.3 2-1.1 2.2-2.4.2-1.3.2-3.2.2-3.2s0-1.9-.2-3.2zM7 12V6l5 3-5 3z"></path></symbol><symbol id="plyr-muted" viewBox="0 0 18 18"><path d="M12.4 12.5l2.1-2.1 2.1 2.1 1.4-1.4L15.9 9 18 6.9l-1.4-1.4-2.1 2.1-2.1-2.1L11 6.9 13.1 9 11 11.1zM3.786 6.008H.714C.286 6.008 0 6.31 0 6.76v4.512c0 .452.286.752.714.752h3.072l4.071 3.858c.5.3 1.143 0 1.143-.602V2.752c0-.601-.643-.977-1.143-.601L3.786 6.008z"></path></symbol><symbol id="plyr-pause" viewBox="0 0 18 18"><path d="M6 1H3c-.6 0-1 .4-1 1v14c0 .6.4 1 1 1h3c.6 0 1-.4 1-1V2c0-.6-.4-1-1-1zm6 0c-.6 0-1 .4-1 1v14c0 .6.4 1 1 1h3c.6 0 1-.4 1-1V2c0-.6-.4-1-1-1h-3z"></path></symbol><symbol id="plyr-pip" viewBox="0 0 18 18"><path d="M13.293 3.293L7.022 9.564l1.414 1.414 6.271-6.271L17 7V1h-6z"></path><path d="M13 15H3V5h5V3H2a1 1 0 00-1 1v12a1 1 0 001 1h12a1 1 0 001-1v-6h-2v5z"></path></symbol><symbol id="plyr-play" viewBox="0 0 18 18"><path d="M15.562 8.1L3.87.225c-.818-.562-1.87 0-1.87.9v15.75c0 .9 1.052 1.462 1.87.9L15.563 9.9c.584-.45.584-1.35 0-1.8z"></path></symbol><symbol id="plyr-restart" viewBox="0 0 18 18"><path d="M9.7 1.2l.7 6.4 2.1-2.1c1.9 1.9 1.9 5.1 0 7-.9 1-2.2 1.5-3.5 1.5-1.3 0-2.6-.5-3.5-1.5-1.9-1.9-1.9-5.1 0-7 .6-.6 1.4-1.1 2.3-1.3l-.6-1.9C6 2.6 4.9 3.2 4 4.1 1.3 6.8 1.3 11.2 4 14c1.3 1.3 3.1 2 4.9 2 1.9 0 3.6-.7 4.9-2 2.7-2.7 2.7-7.1 0-9.9L16 1.9l-6.3-.7z"></path></symbol><symbol id="plyr-rewind" viewBox="0 0 18 18"><path d="M10.125 1L0 9l10.125 8v-6.171L18 17V1l-7.875 6.171z"></path></symbol><symbol id="plyr-settings" viewBox="0 0 18 18"><path d="M16.135 7.784a2 2 0 01-1.23-2.969c.322-.536.225-.998-.094-1.316l-.31-.31c-.318-.318-.78-.415-1.316-.094a2 2 0 01-2.969-1.23C10.065 1.258 9.669 1 9.219 1h-.438c-.45 0-.845.258-.997.865a2 2 0 01-2.969 1.23c-.536-.322-.999-.225-1.317.093l-.31.31c-.318.318-.415.781-.093 1.317a2 2 0 01-1.23 2.969C1.26 7.935 1 8.33 1 8.781v.438c0 .45.258.845.865.997a2 2 0 011.23 2.969c-.322.536-.225.998.094 1.316l.31.31c.319.319.782.415 1.316.094a2 2 0 012.969 1.23c.151.607.547.865.997.865h.438c.45 0 .845-.258.997-.865a2 2 0 012.969-1.23c.535.321.997.225 1.316-.094l.31-.31c.318-.318.415-.781.094-1.316a2 2 0 011.23-2.969c.607-.151.865-.547.865-.997v-.438c0-.451-.26-.846-.865-.997zM9 12a3 3 0 110-6 3 3 0 010 6z"></path></symbol><symbol id="plyr-volume" viewBox="0 0 18 18"><path d="M15.6 3.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4C15.4 5.9 16 7.4 16 9c0 1.6-.6 3.1-1.8 4.3-.4.4-.4 1 0 1.4.2.2.5.3.7.3.3 0 .5-.1.7-.3C17.1 13.2 18 11.2 18 9s-.9-4.2-2.4-5.7z"></path><path d="M11.282 5.282a.909.909 0 000 1.316c.735.735.995 1.458.995 2.402 0 .936-.425 1.917-.995 2.487a.909.909 0 000 1.316c.145.145.636.262 1.018.156a.725.725 0 00.298-.156C13.773 11.733 14.13 10.16 14.13 9c0-.17-.002-.34-.011-.51-.053-.992-.319-2.005-1.522-3.208a.909.909 0 00-1.316 0zm-7.496.726H.714C.286 6.008 0 6.31 0 6.76v4.512c0 .452.286.752.714.752h3.072l4.071 3.858c.5.3 1.143 0 1.143-.602V2.752c0-.601-.643-.977-1.143-.601L3.786 6.008z"></path></symbol></svg></div>
+    <div class="page-container" data-controller="push-state navigation--navbar--component" data-push-state-original-url="https://learn.lewagon.com/c/2186/b/324">
+      
+
+      <div class="navbar-wagon">
+  <!-- Logo -->
+  <div class="navbar-wagon-left">
+
+        <!-- Dropdown actions for members -->
+        <div class="dropdownable dropdown dropdown-hoverable mr-3">
+  <a class="d-flex align-items-center navbar-wagon-brand" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="https://learn.lewagon.com/c/2186/b/324#">
+    <img class="rounded" src="./Media queries in CSS_files/PgKzMuXZ9Mq1SdYHFCnVsqxF.png"><div><span>Le Wagon</span><span class="subtitle">Introduction to Programing / Introduction à la Programmation</span></div>
+    <i class="fas fa-caret-down"></i>
+</a>  <div class="dropdown-menu navigation-dropdown ">
+                <p class="navigation-section-title">Le Wagon</p>
+            <div class="main-links">
+                <a class="navigation-dropdown-link" href="https://learn.lewagon.com/dashboard">
+  My Courses
+</a>
+            </div>
+            <div class="navigation-horizontal-separator"></div>
+            <p class="navigation-section-title">Jump to</p>
+            <div class="dropdown-submenu" data-controller="navigation--dropdown-submenu--component" data-action="mouseover-&gt;navigation--dropdown-submenu--component#show mouseleave-&gt;navigation--dropdown-submenu--component#hide">
+  <span class="d-flex justify-content-between align-items-center navigation-dropdown-link">
+    Batch
+    <i class="fas fa-caret-right"></i>
+  </span>
+  <div class="submenu-content" data-target="navigation--dropdown-submenu--component.content">
+      <a class=" active" href="https://learn.lewagon.com/c/2186/b/324">
+  <div><img class="rounded" src="./Media queries in CSS_files/uXLTNTcsFBjEhTtfUkJqLVvG.jpg"><span>Introduction to Programing / Introduction à la Programmation</span></div>
+</a>
+  </div>
+</div>
+
+
+  </div>
+</div>
+
+    
+      <a class="navbar-wagon-item navbar-wagon-link " href="https://learn.lewagon.com/batches/1324/teachers">
+  Teachers
+</a>
+      <a class="navbar-wagon-item navbar-wagon-link " href="https://learn.lewagon.com/batches/1324/learners">
+  Classmates
+</a>
+  </div>
+
+  <!-- Right Navigation -->
+  <div class="navbar-wagon-right d-none d-sm-flex">
+
+
+        <a class="navbar-wagon-item navbar-wagon-link active" href="https://learn.lewagon.com/c/2186/b/324">
+  Content
+</a>
+        <a class="navbar-wagon-item navbar-wagon-link " href="https://learn.lewagon.com/classes/2186/forum">
+  Forum
+</a>
+
+
+
+        <div class="navigation-vertical-separator"></div>
+        <span class="text-white mx-3 mb-1">Web Development</span>
+
+    
+
+
+    <!-- Avatar with dropdown menu -->
+    <div class="dropdownable dropdown  pr-0">
+  <a class="d-flex align-items-center navbar-wagon-brand" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="https://learn.lewagon.com/c/2186/b/324#">
+    <img class="rounded avatar-sm" id="navbar-wagon-menu" src="./Media queries in CSS_files/generic-avatar-e50ef28a226a877c96eec6c3313aa4a10959d17ada0db89192ed85a56b0ee903.png">
+    
+</a>  <div class="dropdown-menu navigation-dropdown dropdown-menu-right">
+    
+        <div class="main-links">
+            <a class="dropdown-item" href="https://learn.lewagon.com/profile/edit">
+              Edit profile
+</a>          <a class="dropdown-item" rel="nofollow" data-method="delete" href="https://learn.lewagon.com/users/sign_out">
+            <i class="fas fa-sign-out-alt mr-2"></i>Log out
+</a>        </div>
+
+  </div>
+</div>
+  </div>
+</div>
+        
+
+<div class="course-container spaced " data-controller="students--enrollment-cable " data-action="videoended-&gt;students--enrollment-cable#createVideoCompletion slidedeckended-&gt;students--enrollment-cable#createSlideDeckCompletion" data-students--enrollment-cable-enrollment-id="72317" data-students--enrollment-cable-block-id="324">
+  
+<nav class="lessons-nav sidenav students__lessons-nav" id="sidenav-lessons" data-controller="sidenav lessons" data-target="toggle-sidenav.sidenav">
+    <a class="back-link-gray mt-4 mb-2 pl-3" href="https://learn.lewagon.com/dashboard"><span><i class="fas fa-arrow-left"></i>Back to my courses</span></a>
+
+  <section data-target="lessons.lessonList" data-current-account="le-wagon" data-active-lesson-id="543" data-account-with-cname="true">
+
+        <!-- TODO(Eschults): remove this before merge -- handle with migration -->
+
+
+
+        <nav class="lesson-nav  " data-lesson-id="517" data-current-account="le-wagon" data-controller="collapsible" data-target="sidenav.lesson" data-action="open-&gt;collapsible#toggleCollapse">
+          <div class="lesson-nav-item position-relative" data-controller="move-dropdown-menu ">
+              <small class="icon-container" data-target="students--enrollment-cable.lessonDot" data-lesson-id="17588">
+                <i class="fas fa-circle text-success"></i>
+              </small>
+
+            <span class="lesson-link text-overflow-ellipsis">Introduction</span>
+
+              <a class="absolute-link" href="https://learn.lewagon.com/c/2186/b/287"></a>
+
+
+            <a class="toggle-chevron sidenav-action z-index-3" data-action="click-&gt;collapsible#toggleCollapse click-&gt;sidenav#storeLessonsOpen" data-turbolinks="false" data-lesson-id="517" href="https://learn.lewagon.com/c/2186/b/324#">
+              <i class="fas fa-chevron-right" data-target="collapsible.icon dragover.toggleChevronOnEnter"></i>
+</a>          </div>
+
+            <nav class="lesson-nav-sub-items nav d-none" data-target="collapsible.content">
+
+                <a class="nav-link sidenav-sublink   inactive" data-block-id="287" href="https://learn.lewagon.com/c/2186/b/287">
+                  <div class="lesson-nav-item">
+    <span class="block-emoji-icon">
+        📺
+    </span>
+
+  <span class="nav-link-text ml-1">
+    Intro to web development
+  </span>
+</div>
+
+
+                      <div class="lesson-sub-nav-item-progress progress-success"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+    <g id="Icons-/-Check" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="check-2" transform="translate(3.000000, 6.000000)" stroke-width="2">
+            <polyline id="Shape" points="0 5.53846154 6.3 12 18 0" stroke="#32B796"></polyline>
+        </g>
+    </g>
+</svg>
+</div>
+</a>
+                <a class="nav-link sidenav-sublink   inactive" data-block-id="290" href="https://learn.lewagon.com/c/2186/b/290">
+                  <div class="lesson-nav-item">
+    <span class="block-emoji-icon">
+        📝
+    </span>
+
+  <span class="nav-link-text ml-1">
+    Installing developer tools
+  </span>
+</div>
+
+
+                      <div class="lesson-sub-nav-item-progress progress-success"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+    <g id="Icons-/-Check" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="check-2" transform="translate(3.000000, 6.000000)" stroke-width="2">
+            <polyline id="Shape" points="0 5.53846154 6.3 12 18 0" stroke="#32B796"></polyline>
+        </g>
+    </g>
+</svg>
+</div>
+</a>
+                <a class="nav-link sidenav-sublink   inactive" data-block-id="283" href="https://learn.lewagon.com/c/2186/b/283">
+                  <div class="lesson-nav-item">
+    <span class="block-emoji-icon">
+        📝
+    </span>
+
+  <span class="nav-link-text ml-1">
+    Create your first project
+  </span>
+</div>
+
+
+                      <div class="lesson-sub-nav-item-progress progress-success"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+    <g id="Icons-/-Check" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="check-2" transform="translate(3.000000, 6.000000)" stroke-width="2">
+            <polyline id="Shape" points="0 5.53846154 6.3 12 18 0" stroke="#32B796"></polyline>
+        </g>
+    </g>
+</svg>
+</div>
+</a>
+                <a class="nav-link sidenav-sublink   inactive" data-block-id="284" href="https://learn.lewagon.com/c/2186/b/284">
+                  <div class="lesson-nav-item">
+    <span class="block-emoji-icon">
+        🤔
+    </span>
+
+  <span class="nav-link-text ml-1">
+    Developer tools quiz
+  </span>
+</div>
+
+
+                      <div class="lesson-sub-nav-item-progress progress-success"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+    <g id="Icons-/-Check" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="check-2" transform="translate(3.000000, 6.000000)" stroke-width="2">
+            <polyline id="Shape" points="0 5.53846154 6.3 12 18 0" stroke="#32B796"></polyline>
+        </g>
+    </g>
+</svg>
+</div>
+</a>            </nav>
+        </nav>
+        <!-- TODO(Eschults): remove this before merge -- handle with migration -->
+
+
+
+        <nav class="lesson-nav  " data-lesson-id="525" data-current-account="le-wagon" data-controller="collapsible" data-target="sidenav.lesson" data-action="open-&gt;collapsible#toggleCollapse">
+          <div class="lesson-nav-item position-relative" data-controller="move-dropdown-menu ">
+              <small class="icon-container" data-target="students--enrollment-cable.lessonDot" data-lesson-id="17589">
+                <i class="fas fa-circle text-success"></i>
+              </small>
+
+            <span class="lesson-link text-overflow-ellipsis">HTML Basics</span>
+
+              <a class="absolute-link" href="https://learn.lewagon.com/c/2186/b/288"></a>
+
+
+            <a class="toggle-chevron sidenav-action z-index-3" data-action="click-&gt;collapsible#toggleCollapse click-&gt;sidenav#storeLessonsOpen" data-turbolinks="false" data-lesson-id="525" href="https://learn.lewagon.com/c/2186/b/324#">
+              <i class="fas fa-chevron-right" data-target="collapsible.icon dragover.toggleChevronOnEnter"></i>
+</a>          </div>
+
+            <nav class="lesson-nav-sub-items nav d-none" data-target="collapsible.content">
+
+                <a class="nav-link sidenav-sublink   inactive" data-block-id="288" href="https://learn.lewagon.com/c/2186/b/288">
+                  <div class="lesson-nav-item">
+    <span class="block-emoji-icon">
+        📺
+    </span>
+
+  <span class="nav-link-text ml-1">
+    1. Skeleton and head
+  </span>
+</div>
+
+
+                      <div class="lesson-sub-nav-item-progress progress-success"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+    <g id="Icons-/-Check" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="check-2" transform="translate(3.000000, 6.000000)" stroke-width="2">
+            <polyline id="Shape" points="0 5.53846154 6.3 12 18 0" stroke="#32B796"></polyline>
+        </g>
+    </g>
+</svg>
+</div>
+</a>
+                <a class="nav-link sidenav-sublink   inactive" data-block-id="289" href="https://learn.lewagon.com/c/2186/b/289">
+                  <div class="lesson-nav-item">
+    <span class="block-emoji-icon">
+        📺
+    </span>
+
+  <span class="nav-link-text ml-1">
+    2. Body and common tags
+  </span>
+</div>
+
+
+                      <div class="lesson-sub-nav-item-progress progress-success"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+    <g id="Icons-/-Check" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="check-2" transform="translate(3.000000, 6.000000)" stroke-width="2">
+            <polyline id="Shape" points="0 5.53846154 6.3 12 18 0" stroke="#32B796"></polyline>
+        </g>
+    </g>
+</svg>
+</div>
+</a>
+                <a class="nav-link sidenav-sublink   inactive" data-block-id="285" href="https://learn.lewagon.com/c/2186/b/285">
+                  <div class="lesson-nav-item">
+    <span class="block-emoji-icon">
+        📝
+    </span>
+
+  <span class="nav-link-text ml-1">
+    HTML summary
+  </span>
+</div>
+
+
+                      <div class="lesson-sub-nav-item-progress progress-success"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+    <g id="Icons-/-Check" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="check-2" transform="translate(3.000000, 6.000000)" stroke-width="2">
+            <polyline id="Shape" points="0 5.53846154 6.3 12 18 0" stroke="#32B796"></polyline>
+        </g>
+    </g>
+</svg>
+</div>
+</a>
+                <a class="nav-link sidenav-sublink   inactive" data-block-id="292" href="https://learn.lewagon.com/c/2186/b/292">
+                  <div class="lesson-nav-item">
+    <span class="block-emoji-icon">
+        📝
+    </span>
+
+  <span class="nav-link-text ml-1">
+    Code your profile
+  </span>
+</div>
+
+
+                      <div class="lesson-sub-nav-item-progress progress-success"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+    <g id="Icons-/-Check" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="check-2" transform="translate(3.000000, 6.000000)" stroke-width="2">
+            <polyline id="Shape" points="0 5.53846154 6.3 12 18 0" stroke="#32B796"></polyline>
+        </g>
+    </g>
+</svg>
+</div>
+</a>
+                <a class="nav-link sidenav-sublink   inactive" data-block-id="286" href="https://learn.lewagon.com/c/2186/b/286">
+                  <div class="lesson-nav-item">
+    <span class="block-emoji-icon">
+        🤔
+    </span>
+
+  <span class="nav-link-text ml-1">
+    HTML quiz
+  </span>
+</div>
+
+
+                      <div class="lesson-sub-nav-item-progress progress-success"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+    <g id="Icons-/-Check" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="check-2" transform="translate(3.000000, 6.000000)" stroke-width="2">
+            <polyline id="Shape" points="0 5.53846154 6.3 12 18 0" stroke="#32B796"></polyline>
+        </g>
+    </g>
+</svg>
+</div>
+</a>
+                <a class="nav-link sidenav-sublink   inactive" data-block-id="291" href="https://learn.lewagon.com/c/2186/b/291">
+                  <div class="lesson-nav-item">
+    <span class="block-emoji-icon">
+        📺
+    </span>
+
+  <span class="nav-link-text ml-1">
+    Extra - adding icons
+  </span>
+</div>
+
+
+                      <div class="lesson-sub-nav-item-progress progress-success"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+    <g id="Icons-/-Check" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="check-2" transform="translate(3.000000, 6.000000)" stroke-width="2">
+            <polyline id="Shape" points="0 5.53846154 6.3 12 18 0" stroke="#32B796"></polyline>
+        </g>
+    </g>
+</svg>
+</div>
+</a>            </nav>
+        </nav>
+        <!-- TODO(Eschults): remove this before merge -- handle with migration -->
+
+
+
+        <nav class="lesson-nav  " data-lesson-id="538" data-current-account="le-wagon" data-controller="collapsible" data-target="sidenav.lesson" data-action="open-&gt;collapsible#toggleCollapse">
+          <div class="lesson-nav-item position-relative" data-controller="move-dropdown-menu ">
+              <small class="icon-container" data-target="students--enrollment-cable.lessonDot" data-lesson-id="17590">
+                <i class="fas fa-circle text-success"></i>
+              </small>
+
+            <span class="lesson-link text-overflow-ellipsis">CSS Basics</span>
+
+              <a class="absolute-link" href="https://learn.lewagon.com/c/2186/b/323"></a>
+
+
+            <a class="toggle-chevron sidenav-action z-index-3" data-action="click-&gt;collapsible#toggleCollapse click-&gt;sidenav#storeLessonsOpen" data-turbolinks="false" data-lesson-id="538" href="https://learn.lewagon.com/c/2186/b/324#">
+              <i class="fas fa-chevron-right" data-target="collapsible.icon dragover.toggleChevronOnEnter"></i>
+</a>          </div>
+
+            <nav class="lesson-nav-sub-items nav d-none" data-target="collapsible.content">
+
+                <a class="nav-link sidenav-sublink   inactive" data-block-id="323" href="https://learn.lewagon.com/c/2186/b/323">
+                  <div class="lesson-nav-item">
+    <span class="block-emoji-icon">
+        📺
+    </span>
+
+  <span class="nav-link-text ml-1">
+    Syntax and first properties
+  </span>
+</div>
+
+
+                      <div class="lesson-sub-nav-item-progress progress-success"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+    <g id="Icons-/-Check" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="check-2" transform="translate(3.000000, 6.000000)" stroke-width="2">
+            <polyline id="Shape" points="0 5.53846154 6.3 12 18 0" stroke="#32B796"></polyline>
+        </g>
+    </g>
+</svg>
+</div>
+</a>
+                <a class="nav-link sidenav-sublink   inactive" data-block-id="293" href="https://learn.lewagon.com/c/2186/b/293">
+                  <div class="lesson-nav-item">
+    <span class="block-emoji-icon">
+        📝
+    </span>
+
+  <span class="nav-link-text ml-1">
+    CSS summary
+  </span>
+</div>
+
+
+                      <div class="lesson-sub-nav-item-progress progress-success"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+    <g id="Icons-/-Check" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="check-2" transform="translate(3.000000, 6.000000)" stroke-width="2">
+            <polyline id="Shape" points="0 5.53846154 6.3 12 18 0" stroke="#32B796"></polyline>
+        </g>
+    </g>
+</svg>
+</div>
+</a>
+                <a class="nav-link sidenav-sublink   inactive" data-block-id="294" href="https://learn.lewagon.com/c/2186/b/294">
+                  <div class="lesson-nav-item">
+    <span class="block-emoji-icon">
+        🤔
+    </span>
+
+  <span class="nav-link-text ml-1">
+    CSS quiz
+  </span>
+</div>
+
+
+                      <div class="lesson-sub-nav-item-progress progress-success"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+    <g id="Icons-/-Check" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="check-2" transform="translate(3.000000, 6.000000)" stroke-width="2">
+            <polyline id="Shape" points="0 5.53846154 6.3 12 18 0" stroke="#32B796"></polyline>
+        </g>
+    </g>
+</svg>
+</div>
+</a>            </nav>
+        </nav>
+        <!-- TODO(Eschults): remove this before merge -- handle with migration -->
+
+
+
+        <nav class="lesson-nav  " data-lesson-id="539" data-current-account="le-wagon" data-controller="collapsible" data-target="sidenav.lesson" data-action="open-&gt;collapsible#toggleCollapse">
+          <div class="lesson-nav-item position-relative" data-controller="move-dropdown-menu ">
+              <small class="icon-container" data-target="students--enrollment-cable.lessonDot" data-lesson-id="17591">
+                <i class="fas fa-circle text-success"></i>
+              </small>
+
+            <span class="lesson-link text-overflow-ellipsis">Fonts and colors</span>
+
+              <a class="absolute-link" href="https://learn.lewagon.com/c/2186/b/295"></a>
+
+
+            <a class="toggle-chevron sidenav-action z-index-3" data-action="click-&gt;collapsible#toggleCollapse click-&gt;sidenav#storeLessonsOpen" data-turbolinks="false" data-lesson-id="539" href="https://learn.lewagon.com/c/2186/b/324#">
+              <i class="fas fa-chevron-right" data-target="collapsible.icon dragover.toggleChevronOnEnter"></i>
+</a>          </div>
+
+            <nav class="lesson-nav-sub-items nav d-none" data-target="collapsible.content">
+
+                <a class="nav-link sidenav-sublink   inactive" data-block-id="295" href="https://learn.lewagon.com/c/2186/b/295">
+                  <div class="lesson-nav-item">
+    <span class="block-emoji-icon">
+        📺
+    </span>
+
+  <span class="nav-link-text ml-1">
+    1. Design fonts and colors
+  </span>
+</div>
+
+
+                      <div class="lesson-sub-nav-item-progress progress-success"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+    <g id="Icons-/-Check" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="check-2" transform="translate(3.000000, 6.000000)" stroke-width="2">
+            <polyline id="Shape" points="0 5.53846154 6.3 12 18 0" stroke="#32B796"></polyline>
+        </g>
+    </g>
+</svg>
+</div>
+</a>
+                <a class="nav-link sidenav-sublink   inactive" data-block-id="296" href="https://learn.lewagon.com/c/2186/b/296">
+                  <div class="lesson-nav-item">
+    <span class="block-emoji-icon">
+        📺
+    </span>
+
+  <span class="nav-link-text ml-1">
+    2. How to use great colors
+  </span>
+</div>
+
+
+                      <div class="lesson-sub-nav-item-progress progress-success"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+    <g id="Icons-/-Check" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="check-2" transform="translate(3.000000, 6.000000)" stroke-width="2">
+            <polyline id="Shape" points="0 5.53846154 6.3 12 18 0" stroke="#32B796"></polyline>
+        </g>
+    </g>
+</svg>
+</div>
+</a>
+                <a class="nav-link sidenav-sublink   inactive" data-block-id="297" href="https://learn.lewagon.com/c/2186/b/297">
+                  <div class="lesson-nav-item">
+    <span class="block-emoji-icon">
+        📺
+    </span>
+
+  <span class="nav-link-text ml-1">
+    3. How to use great fonts
+  </span>
+</div>
+
+
+                      <div class="lesson-sub-nav-item-progress progress-success"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+    <g id="Icons-/-Check" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="check-2" transform="translate(3.000000, 6.000000)" stroke-width="2">
+            <polyline id="Shape" points="0 5.53846154 6.3 12 18 0" stroke="#32B796"></polyline>
+        </g>
+    </g>
+</svg>
+</div>
+</a>
+                <a class="nav-link sidenav-sublink   inactive" data-block-id="298" href="https://learn.lewagon.com/c/2186/b/298">
+                  <div class="lesson-nav-item">
+    <span class="block-emoji-icon">
+        📝
+    </span>
+
+  <span class="nav-link-text ml-1">
+    Design your profile
+  </span>
+</div>
+
+
+                      <div class="lesson-sub-nav-item-progress progress-success"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+    <g id="Icons-/-Check" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="check-2" transform="translate(3.000000, 6.000000)" stroke-width="2">
+            <polyline id="Shape" points="0 5.53846154 6.3 12 18 0" stroke="#32B796"></polyline>
+        </g>
+    </g>
+</svg>
+</div>
+</a>
+                <a class="nav-link sidenav-sublink   inactive" data-block-id="313" href="https://learn.lewagon.com/c/2186/b/313">
+                  <div class="lesson-nav-item">
+    <span class="block-emoji-icon">
+        🤔
+    </span>
+
+  <span class="nav-link-text ml-1">
+    Are you a designer yet?
+  </span>
+</div>
+
+
+                      <div class="lesson-sub-nav-item-progress progress-success"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+    <g id="Icons-/-Check" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="check-2" transform="translate(3.000000, 6.000000)" stroke-width="2">
+            <polyline id="Shape" points="0 5.53846154 6.3 12 18 0" stroke="#32B796"></polyline>
+        </g>
+    </g>
+</svg>
+</div>
+</a>            </nav>
+        </nav>
+        <!-- TODO(Eschults): remove this before merge -- handle with migration -->
+
+
+
+        <nav class="lesson-nav  " data-lesson-id="541" data-current-account="le-wagon" data-controller="collapsible" data-target="sidenav.lesson" data-action="open-&gt;collapsible#toggleCollapse">
+          <div class="lesson-nav-item position-relative" data-controller="move-dropdown-menu ">
+              <small class="icon-container" data-target="students--enrollment-cable.lessonDot" data-lesson-id="17592">
+                <i class="fas fa-circle text-success"></i>
+              </small>
+
+            <span class="lesson-link text-overflow-ellipsis">Id and class</span>
+
+              <a class="absolute-link" href="https://learn.lewagon.com/c/2186/b/302"></a>
+
+
+            <a class="toggle-chevron sidenav-action z-index-3" data-action="click-&gt;collapsible#toggleCollapse click-&gt;sidenav#storeLessonsOpen" data-turbolinks="false" data-lesson-id="541" href="https://learn.lewagon.com/c/2186/b/324#">
+              <i class="fas fa-chevron-right" data-target="collapsible.icon dragover.toggleChevronOnEnter"></i>
+</a>          </div>
+
+            <nav class="lesson-nav-sub-items nav d-none" data-target="collapsible.content">
+
+                <a class="nav-link sidenav-sublink   inactive" data-block-id="302" href="https://learn.lewagon.com/c/2186/b/302">
+                  <div class="lesson-nav-item">
+    <span class="block-emoji-icon">
+        📺
+    </span>
+
+  <span class="nav-link-text ml-1">
+    Advanced CSS selectors
+  </span>
+</div>
+
+
+                      <div class="lesson-sub-nav-item-progress progress-success"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+    <g id="Icons-/-Check" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="check-2" transform="translate(3.000000, 6.000000)" stroke-width="2">
+            <polyline id="Shape" points="0 5.53846154 6.3 12 18 0" stroke="#32B796"></polyline>
+        </g>
+    </g>
+</svg>
+</div>
+</a>
+                <a class="nav-link sidenav-sublink   inactive" data-block-id="303" href="https://learn.lewagon.com/c/2186/b/303">
+                  <div class="lesson-nav-item">
+    <span class="block-emoji-icon">
+        📝
+    </span>
+
+  <span class="nav-link-text ml-1">
+    CSS selectors summary
+  </span>
+</div>
+
+
+                      <div class="lesson-sub-nav-item-progress progress-success"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+    <g id="Icons-/-Check" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="check-2" transform="translate(3.000000, 6.000000)" stroke-width="2">
+            <polyline id="Shape" points="0 5.53846154 6.3 12 18 0" stroke="#32B796"></polyline>
+        </g>
+    </g>
+</svg>
+</div>
+</a>
+                <a class="nav-link sidenav-sublink   inactive" data-block-id="315" href="https://learn.lewagon.com/c/2186/b/315">
+                  <div class="lesson-nav-item">
+    <span class="block-emoji-icon">
+        🤔
+    </span>
+
+  <span class="nav-link-text ml-1">
+    CSS selectors quiz
+  </span>
+</div>
+
+
+                      <div class="lesson-sub-nav-item-progress progress-success"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+    <g id="Icons-/-Check" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="check-2" transform="translate(3.000000, 6.000000)" stroke-width="2">
+            <polyline id="Shape" points="0 5.53846154 6.3 12 18 0" stroke="#32B796"></polyline>
+        </g>
+    </g>
+</svg>
+</div>
+</a>            </nav>
+        </nav>
+        <!-- TODO(Eschults): remove this before merge -- handle with migration -->
+
+
+
+        <nav class="lesson-nav  " data-lesson-id="540" data-current-account="le-wagon" data-controller="collapsible" data-target="sidenav.lesson" data-action="open-&gt;collapsible#toggleCollapse">
+          <div class="lesson-nav-item position-relative" data-controller="move-dropdown-menu ">
+              <small class="icon-container" data-target="students--enrollment-cable.lessonDot" data-lesson-id="17593">
+                <i class="fas fa-circle text-success"></i>
+              </small>
+
+            <span class="lesson-link text-overflow-ellipsis">Structuring with divs</span>
+
+              <a class="absolute-link" href="https://learn.lewagon.com/c/2186/b/299"></a>
+
+
+            <a class="toggle-chevron sidenav-action z-index-3" data-action="click-&gt;collapsible#toggleCollapse click-&gt;sidenav#storeLessonsOpen" data-turbolinks="false" data-lesson-id="540" href="https://learn.lewagon.com/c/2186/b/324#">
+              <i class="fas fa-chevron-right" data-target="collapsible.icon dragover.toggleChevronOnEnter"></i>
+</a>          </div>
+
+            <nav class="lesson-nav-sub-items nav d-none" data-target="collapsible.content">
+
+                <a class="nav-link sidenav-sublink   inactive" data-block-id="299" href="https://learn.lewagon.com/c/2186/b/299">
+                  <div class="lesson-nav-item">
+    <span class="block-emoji-icon">
+        📺
+    </span>
+
+  <span class="nav-link-text ml-1">
+    1. What is a div?
+  </span>
+</div>
+
+
+                      <div class="lesson-sub-nav-item-progress progress-success"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+    <g id="Icons-/-Check" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="check-2" transform="translate(3.000000, 6.000000)" stroke-width="2">
+            <polyline id="Shape" points="0 5.53846154 6.3 12 18 0" stroke="#32B796"></polyline>
+        </g>
+    </g>
+</svg>
+</div>
+</a>
+                <a class="nav-link sidenav-sublink   inactive" data-block-id="300" href="https://learn.lewagon.com/c/2186/b/300">
+                  <div class="lesson-nav-item">
+    <span class="block-emoji-icon">
+        📺
+    </span>
+
+  <span class="nav-link-text ml-1">
+    2. Div design techniques
+  </span>
+</div>
+
+
+                      <div class="lesson-sub-nav-item-progress progress-success"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+    <g id="Icons-/-Check" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="check-2" transform="translate(3.000000, 6.000000)" stroke-width="2">
+            <polyline id="Shape" points="0 5.53846154 6.3 12 18 0" stroke="#32B796"></polyline>
+        </g>
+    </g>
+</svg>
+</div>
+</a>
+                <a class="nav-link sidenav-sublink   inactive" data-block-id="301" href="https://learn.lewagon.com/c/2186/b/301">
+                  <div class="lesson-nav-item">
+    <span class="block-emoji-icon">
+        📝
+    </span>
+
+  <span class="nav-link-text ml-1">
+    Div summary
+  </span>
+</div>
+
+
+                      <div class="lesson-sub-nav-item-progress progress-success"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+    <g id="Icons-/-Check" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="check-2" transform="translate(3.000000, 6.000000)" stroke-width="2">
+            <polyline id="Shape" points="0 5.53846154 6.3 12 18 0" stroke="#32B796"></polyline>
+        </g>
+    </g>
+</svg>
+</div>
+</a>
+                <a class="nav-link sidenav-sublink   inactive" data-block-id="314" href="https://learn.lewagon.com/c/2186/b/314">
+                  <div class="lesson-nav-item">
+    <span class="block-emoji-icon">
+        🤔
+    </span>
+
+  <span class="nav-link-text ml-1">
+    Div quiz
+  </span>
+</div>
+
+
+                      <div class="lesson-sub-nav-item-progress progress-success"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+    <g id="Icons-/-Check" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="check-2" transform="translate(3.000000, 6.000000)" stroke-width="2">
+            <polyline id="Shape" points="0 5.53846154 6.3 12 18 0" stroke="#32B796"></polyline>
+        </g>
+    </g>
+</svg>
+</div>
+</a>            </nav>
+        </nav>
+        <!-- TODO(Eschults): remove this before merge -- handle with migration -->
+
+
+
+        <nav class="lesson-nav active open " data-lesson-id="543" data-current-account="le-wagon" data-controller="collapsible" data-target="sidenav.lesson" data-action="open-&gt;collapsible#toggleCollapse">
+          <div class="lesson-nav-item position-relative" data-controller="move-dropdown-menu ">
+              <small class="icon-container" data-target="students--enrollment-cable.lessonDot" data-lesson-id="17595">
+                <i class="fas fa-circle text-success"></i>
+              </small>
+
+            <span class="lesson-link text-overflow-ellipsis">Responsive Design</span>
+
+              <a class="absolute-link" href="https://learn.lewagon.com/c/2186/b/324"></a>
+
+
+            <a class="toggle-chevron sidenav-action z-index-3" data-action="click-&gt;collapsible#toggleCollapse click-&gt;sidenav#storeLessonsOpen" data-turbolinks="false" data-lesson-id="543" href="https://learn.lewagon.com/c/2186/b/324#">
+              <i class="fas fa-chevron-down" data-target="collapsible.icon dragover.toggleChevronOnEnter"></i>
+</a>          </div>
+
+            <nav class="lesson-nav-sub-items nav " data-target="collapsible.content">
+
+                <a class="nav-link sidenav-sublink  active " data-block-id="324" href="https://learn.lewagon.com/c/2186/b/324">
+                  <div class="lesson-nav-item">
+    <span class="block-emoji-icon">
+        📺
+    </span>
+
+  <span class="nav-link-text ml-1">
+    Media queries in CSS
+  </span>
+</div>
+
+
+                      <div class="lesson-sub-nav-item-progress progress-success"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+    <g id="Icons-/-Check" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="check-2" transform="translate(3.000000, 6.000000)" stroke-width="2">
+            <polyline id="Shape" points="0 5.53846154 6.3 12 18 0" stroke="#32B796"></polyline>
+        </g>
+    </g>
+</svg>
+</div>
+</a>
+                <a class="nav-link sidenav-sublink   " data-block-id="308" href="https://learn.lewagon.com/c/2186/b/308">
+                  <div class="lesson-nav-item">
+    <span class="block-emoji-icon">
+        📝
+    </span>
+
+  <span class="nav-link-text ml-1">
+    Build a responsive container
+  </span>
+</div>
+
+
+                      <div class="lesson-sub-nav-item-progress progress-success"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+    <g id="Icons-/-Check" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="check-2" transform="translate(3.000000, 6.000000)" stroke-width="2">
+            <polyline id="Shape" points="0 5.53846154 6.3 12 18 0" stroke="#32B796"></polyline>
+        </g>
+    </g>
+</svg>
+</div>
+</a>
+                <a class="nav-link sidenav-sublink   " data-block-id="327" href="https://learn.lewagon.com/c/2186/b/327">
+                  <div class="lesson-nav-item">
+    <span class="block-emoji-icon">
+        🤔
+    </span>
+
+  <span class="nav-link-text ml-1">
+    What is Responsive Design?
+  </span>
+</div>
+
+
+                      <div class="lesson-sub-nav-item-progress progress-success"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+    <g id="Icons-/-Check" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="check-2" transform="translate(3.000000, 6.000000)" stroke-width="2">
+            <polyline id="Shape" points="0 5.53846154 6.3 12 18 0" stroke="#32B796"></polyline>
+        </g>
+    </g>
+</svg>
+</div>
+</a>            </nav>
+        </nav>
+        <!-- TODO(Eschults): remove this before merge -- handle with migration -->
+
+
+
+        <nav class="lesson-nav open" data-lesson-id="542" data-current-account="le-wagon" data-controller="collapsible" data-target="sidenav.lesson" data-action="open-&gt;collapsible#toggleCollapse">
+          <div class="lesson-nav-item position-relative" data-controller="move-dropdown-menu ">
+              <small class="icon-container" data-target="students--enrollment-cable.lessonDot" data-lesson-id="17594">
+                <i class="fas fa-circle text-gray-200"></i>
+              </small>
+
+            <span class="lesson-link text-overflow-ellipsis">Let's finish your profile</span>
+
+              <a class="absolute-link" href="https://learn.lewagon.com/c/2186/b/304"></a>
+
+
+            <a class="toggle-chevron sidenav-action z-index-3" data-action="click-&gt;collapsible#toggleCollapse click-&gt;sidenav#storeLessonsOpen" data-turbolinks="false" data-lesson-id="542" href="https://learn.lewagon.com/c/2186/b/324#">
+              <i class="fas fa-chevron-down" data-target="collapsible.icon dragover.toggleChevronOnEnter"></i>
+</a>          </div>
+
+            <nav class="lesson-nav-sub-items nav" data-target="collapsible.content">
+
+                <a class="nav-link sidenav-sublink   inactive" data-block-id="304" href="https://learn.lewagon.com/c/2186/b/304">
+                  <div class="lesson-nav-item">
+    <span class="block-emoji-icon">
+        📺
+    </span>
+
+  <span class="nav-link-text ml-1">
+    Design your profile
+  </span>
+</div>
+
+
+                      
+</a>
+                <a class="nav-link sidenav-sublink   inactive" data-block-id="305" href="https://learn.lewagon.com/c/2186/b/305">
+                  <div class="lesson-nav-item">
+    <span class="block-emoji-icon">
+        📝
+    </span>
+
+  <span class="nav-link-text ml-1">
+    Part-1: Profile div structure
+  </span>
+</div>
+
+
+                      
+</a>
+                <a class="nav-link sidenav-sublink   inactive" data-block-id="306" href="https://learn.lewagon.com/c/2186/b/306">
+                  <div class="lesson-nav-item">
+    <span class="block-emoji-icon">
+        📝
+    </span>
+
+  <span class="nav-link-text ml-1">
+    Part 2: Profile finishing touches
+  </span>
+</div>
+
+
+                      
+</a>            </nav>
+        </nav>
+        <!-- TODO(Eschults): remove this before merge -- handle with migration -->
+
+
+
+        <nav class="lesson-nav  " data-lesson-id="544" data-current-account="le-wagon" data-controller="collapsible" data-target="sidenav.lesson" data-action="open-&gt;collapsible#toggleCollapse">
+          <div class="lesson-nav-item position-relative" data-controller="move-dropdown-menu ">
+              <small class="icon-container" data-target="students--enrollment-cable.lessonDot" data-lesson-id="17596">
+                <i class="fas fa-circle text-gray-200"></i>
+              </small>
+
+            <span class="lesson-link text-overflow-ellipsis">Put your profile online</span>
+
+              <a class="absolute-link" href="https://learn.lewagon.com/c/2186/b/328"></a>
+
+
+            <a class="toggle-chevron sidenav-action z-index-3" data-action="click-&gt;collapsible#toggleCollapse click-&gt;sidenav#storeLessonsOpen" data-turbolinks="false" data-lesson-id="544" href="https://learn.lewagon.com/c/2186/b/324#">
+              <i class="fas fa-chevron-right" data-target="collapsible.icon dragover.toggleChevronOnEnter"></i>
+</a>          </div>
+
+            <nav class="lesson-nav-sub-items nav d-none" data-target="collapsible.content">
+
+                <a class="nav-link sidenav-sublink   inactive" data-block-id="328" href="https://learn.lewagon.com/c/2186/b/328">
+                  <div class="lesson-nav-item">
+    <span class="block-emoji-icon">
+        🚀
+    </span>
+
+  <span class="nav-link-text ml-1">
+    Submit your profile, finally!
+  </span>
+</div>
+
+
+                      <div class="lesson-sub-nav-item-progress"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+  <g id="Icons-/-Close" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+    <g id="simple-remove" transform="translate(4.000000, 4.000000)" stroke="#111111" stroke-width="1">
+      <path d="M16,0 L0,16" id="Shape"></path>
+      <path d="M16,16 L0,0" id="Shape"></path>
+    </g>
+  </g>
+</svg>
+</div>
+</a>
+                <a class="nav-link sidenav-sublink   inactive" data-block-id="2641" href="https://learn.lewagon.com/c/2186/b/2641">
+                  <div class="lesson-nav-item">
+    <span class="block-emoji-icon">
+        📺
+    </span>
+
+  <span class="nav-link-text ml-1">
+    How to publish your modifications
+  </span>
+</div>
+
+
+                      
+</a>            </nav>
+        </nav>
+        <!-- TODO(Eschults): remove this before merge -- handle with migration -->
+
+
+
+        <nav class="lesson-nav  " data-lesson-id="545" data-current-account="le-wagon" data-controller="collapsible" data-target="sidenav.lesson" data-action="open-&gt;collapsible#toggleCollapse">
+          <div class="lesson-nav-item position-relative" data-controller="move-dropdown-menu ">
+              <small class="icon-container" data-target="students--enrollment-cable.lessonDot" data-lesson-id="17597">
+                <i class="fas fa-circle text-gray-200"></i>
+              </small>
+
+            <span class="lesson-link text-overflow-ellipsis">Building a UI kit</span>
+
+              <a class="absolute-link" href="https://learn.lewagon.com/c/2186/b/326"></a>
+
+
+            <a class="toggle-chevron sidenav-action z-index-3" data-action="click-&gt;collapsible#toggleCollapse click-&gt;sidenav#storeLessonsOpen" data-turbolinks="false" data-lesson-id="545" href="https://learn.lewagon.com/c/2186/b/324#">
+              <i class="fas fa-chevron-right" data-target="collapsible.icon dragover.toggleChevronOnEnter"></i>
+</a>          </div>
+
+            <nav class="lesson-nav-sub-items nav d-none" data-target="collapsible.content">
+
+                <a class="nav-link sidenav-sublink   inactive" data-block-id="326" href="https://learn.lewagon.com/c/2186/b/326">
+                  <div class="lesson-nav-item">
+    <span class="block-emoji-icon">
+        📺
+    </span>
+
+  <span class="nav-link-text ml-1">
+    1. Simple CSS components
+  </span>
+</div>
+
+
+                      
+</a>
+                <a class="nav-link sidenav-sublink   inactive" data-block-id="337" href="https://learn.lewagon.com/c/2186/b/337">
+                  <div class="lesson-nav-item">
+    <span class="block-emoji-icon">
+        📺
+    </span>
+
+  <span class="nav-link-text ml-1">
+    2. Building a banner
+  </span>
+</div>
+
+
+                      
+</a>
+                <a class="nav-link sidenav-sublink   inactive" data-block-id="309" href="https://learn.lewagon.com/c/2186/b/309">
+                  <div class="lesson-nav-item">
+    <span class="block-emoji-icon">
+        📝
+    </span>
+
+  <span class="nav-link-text ml-1">
+    Let's build your UI kit
+  </span>
+</div>
+
+
+                      
+</a>
+                <a class="nav-link sidenav-sublink   inactive" data-block-id="330" href="https://learn.lewagon.com/c/2186/b/330">
+                  <div class="lesson-nav-item">
+    <span class="block-emoji-icon">
+        🤔
+    </span>
+
+  <span class="nav-link-text ml-1">
+    UI components quiz
+  </span>
+</div>
+
+
+                      
+</a>            </nav>
+        </nav>
+        <!-- TODO(Eschults): remove this before merge -- handle with migration -->
+
+
+
+        <nav class="lesson-nav  " data-lesson-id="546" data-current-account="le-wagon" data-controller="collapsible" data-target="sidenav.lesson" data-action="open-&gt;collapsible#toggleCollapse">
+          <div class="lesson-nav-item position-relative" data-controller="move-dropdown-menu ">
+              <small class="icon-container" data-target="students--enrollment-cable.lessonDot" data-lesson-id="17598">
+                <i class="fas fa-circle text-gray-200"></i>
+              </small>
+
+            <span class="lesson-link text-overflow-ellipsis">Flexbox basics</span>
+
+              <a class="absolute-link" href="https://learn.lewagon.com/c/2186/b/338"></a>
+
+
+            <a class="toggle-chevron sidenav-action z-index-3" data-action="click-&gt;collapsible#toggleCollapse click-&gt;sidenav#storeLessonsOpen" data-turbolinks="false" data-lesson-id="546" href="https://learn.lewagon.com/c/2186/b/324#">
+              <i class="fas fa-chevron-right" data-target="collapsible.icon dragover.toggleChevronOnEnter"></i>
+</a>          </div>
+
+            <nav class="lesson-nav-sub-items nav d-none" data-target="collapsible.content">
+
+                <a class="nav-link sidenav-sublink   inactive" data-block-id="338" href="https://learn.lewagon.com/c/2186/b/338">
+                  <div class="lesson-nav-item">
+    <span class="block-emoji-icon">
+        📺
+    </span>
+
+  <span class="nav-link-text ml-1">
+    1. Coding a card with flexbox
+  </span>
+</div>
+
+
+                      
+</a>
+                <a class="nav-link sidenav-sublink   inactive" data-block-id="339" href="https://learn.lewagon.com/c/2186/b/339">
+                  <div class="lesson-nav-item">
+    <span class="block-emoji-icon">
+        📺
+    </span>
+
+  <span class="nav-link-text ml-1">
+    2. Coding a card grid
+  </span>
+</div>
+
+
+                      
+</a>
+                <a class="nav-link sidenav-sublink   inactive" data-block-id="322" href="https://learn.lewagon.com/c/2186/b/322">
+                  <div class="lesson-nav-item">
+    <span class="block-emoji-icon">
+        📝
+    </span>
+
+  <span class="nav-link-text ml-1">
+    Build your card grid
+  </span>
+</div>
+
+
+                      
+</a>
+                <a class="nav-link sidenav-sublink   inactive" data-block-id="329" href="https://learn.lewagon.com/c/2186/b/329">
+                  <div class="lesson-nav-item">
+    <span class="block-emoji-icon">
+        🤔
+    </span>
+
+  <span class="nav-link-text ml-1">
+    Are you a flex student?
+  </span>
+</div>
+
+
+                      
+</a>            </nav>
+        </nav>
+        <!-- TODO(Eschults): remove this before merge -- handle with migration -->
+
+
+
+        <nav class="lesson-nav  " data-lesson-id="547" data-current-account="le-wagon" data-controller="collapsible" data-target="sidenav.lesson" data-action="open-&gt;collapsible#toggleCollapse">
+          <div class="lesson-nav-item position-relative" data-controller="move-dropdown-menu ">
+              <small class="icon-container" data-target="students--enrollment-cable.lessonDot" data-lesson-id="17599">
+                <i class="fas fa-circle text-gray-200"></i>
+              </small>
+
+            <span class="lesson-link text-overflow-ellipsis">3rd-party services</span>
+
+              <a class="absolute-link" href="https://learn.lewagon.com/c/2186/b/340"></a>
+
+
+            <a class="toggle-chevron sidenav-action z-index-3" data-action="click-&gt;collapsible#toggleCollapse click-&gt;sidenav#storeLessonsOpen" data-turbolinks="false" data-lesson-id="547" href="https://learn.lewagon.com/c/2186/b/324#">
+              <i class="fas fa-chevron-right" data-target="collapsible.icon dragover.toggleChevronOnEnter"></i>
+</a>          </div>
+
+            <nav class="lesson-nav-sub-items nav d-none" data-target="collapsible.content">
+
+                <a class="nav-link sidenav-sublink   inactive" data-block-id="340" href="https://learn.lewagon.com/c/2186/b/340">
+                  <div class="lesson-nav-item">
+    <span class="block-emoji-icon">
+        📺
+    </span>
+
+  <span class="nav-link-text ml-1">
+    Embedding a Typeform
+  </span>
+</div>
+
+
+                      
+</a>
+                <a class="nav-link sidenav-sublink   inactive" data-block-id="2642" href="https://learn.lewagon.com/c/2186/b/2642">
+                  <div class="lesson-nav-item">
+    <span class="block-emoji-icon">
+        📺
+    </span>
+
+  <span class="nav-link-text ml-1">
+    Put your landing online
+  </span>
+</div>
+
+
+                      
+</a>
+                <a class="nav-link sidenav-sublink   inactive" data-block-id="341" href="https://learn.lewagon.com/c/2186/b/341">
+                  <div class="lesson-nav-item">
+    <span class="block-emoji-icon">
+        🚀
+    </span>
+
+  <span class="nav-link-text ml-1">
+    Submit your startup website
+  </span>
+</div>
+
+
+                      <div class="lesson-sub-nav-item-progress"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+  <g id="Icons-/-Close" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+    <g id="simple-remove" transform="translate(4.000000, 4.000000)" stroke="#111111" stroke-width="1">
+      <path d="M16,0 L0,16" id="Shape"></path>
+      <path d="M16,16 L0,0" id="Shape"></path>
+    </g>
+  </g>
+</svg>
+</div>
+</a>            </nav>
+        </nav>
+        <!-- TODO(Eschults): remove this before merge -- handle with migration -->
+
+
+
+        <nav class="lesson-nav  " data-lesson-id="548" data-current-account="le-wagon" data-controller="collapsible" data-target="sidenav.lesson" data-action="open-&gt;collapsible#toggleCollapse">
+          <div class="lesson-nav-item position-relative" data-controller="move-dropdown-menu ">
+              <small class="icon-container" data-target="students--enrollment-cable.lessonDot" data-lesson-id="17600">
+                <i class="fas fa-circle text-gray-200"></i>
+              </small>
+
+            <span class="lesson-link text-overflow-ellipsis">Domain Name and Analytics</span>
+
+              <a class="absolute-link" href="https://learn.lewagon.com/c/2186/b/372"></a>
+
+
+            <a class="toggle-chevron sidenav-action z-index-3" data-action="click-&gt;collapsible#toggleCollapse click-&gt;sidenav#storeLessonsOpen" data-turbolinks="false" data-lesson-id="548" href="https://learn.lewagon.com/c/2186/b/324#">
+              <i class="fas fa-chevron-right" data-target="collapsible.icon dragover.toggleChevronOnEnter"></i>
+</a>          </div>
+
+            <nav class="lesson-nav-sub-items nav d-none" data-target="collapsible.content">
+
+                <a class="nav-link sidenav-sublink   inactive" data-block-id="372" href="https://learn.lewagon.com/c/2186/b/372">
+                  <div class="lesson-nav-item">
+    <span class="block-emoji-icon">
+        📝
+    </span>
+
+  <span class="nav-link-text ml-1">
+    Setting up a Domain Name
+  </span>
+</div>
+
+
+                      
+</a>
+                <a class="nav-link sidenav-sublink   inactive" data-block-id="371" href="https://learn.lewagon.com/c/2186/b/371">
+                  <div class="lesson-nav-item">
+    <span class="block-emoji-icon">
+        📝
+    </span>
+
+  <span class="nav-link-text ml-1">
+    Google Analytics
+  </span>
+</div>
+
+
+                      
+</a>            </nav>
+        </nav>
+        <!-- TODO(Eschults): remove this before merge -- handle with migration -->
+
+
+
+        <nav class="lesson-nav  " data-lesson-id="533" data-current-account="le-wagon" data-controller="collapsible" data-target="sidenav.lesson" data-action="open-&gt;collapsible#toggleCollapse">
+          <div class="lesson-nav-item position-relative" data-controller="move-dropdown-menu ">
+              <small class="icon-container" data-target="students--enrollment-cable.lessonDot" data-lesson-id="17601">
+                <i class="fas fa-circle text-gray-200"></i>
+              </small>
+
+            <span class="lesson-link text-overflow-ellipsis">Extra Resources</span>
+
+              <a class="absolute-link" href="https://learn.lewagon.com/c/2186/b/280"></a>
+
+
+            <a class="toggle-chevron sidenav-action z-index-3" data-action="click-&gt;collapsible#toggleCollapse click-&gt;sidenav#storeLessonsOpen" data-turbolinks="false" data-lesson-id="533" href="https://learn.lewagon.com/c/2186/b/324#">
+              <i class="fas fa-chevron-right" data-target="collapsible.icon dragover.toggleChevronOnEnter"></i>
+</a>          </div>
+
+            <nav class="lesson-nav-sub-items nav d-none" data-target="collapsible.content">
+
+                <a class="nav-link sidenav-sublink   inactive" data-block-id="280" href="https://learn.lewagon.com/c/2186/b/280">
+                  <div class="lesson-nav-item">
+    <span class="block-emoji-icon">
+        📺
+    </span>
+
+  <span class="nav-link-text ml-1">
+    Pimp your Sublime Text
+  </span>
+</div>
+
+
+                      
+</a>
+                <a class="nav-link sidenav-sublink   inactive" data-block-id="281" href="https://learn.lewagon.com/c/2186/b/281">
+                  <div class="lesson-nav-item">
+    <span class="block-emoji-icon">
+        📝
+    </span>
+
+  <span class="nav-link-text ml-1">
+    Sublime Text settings 
+  </span>
+</div>
+
+
+                      
+</a>
+                <a class="nav-link sidenav-sublink   inactive" data-block-id="282" href="https://learn.lewagon.com/c/2186/b/282">
+                  <div class="lesson-nav-item">
+    <span class="block-emoji-icon">
+        📺
+    </span>
+
+  <span class="nav-link-text ml-1">
+    Code faster with Emmet
+  </span>
+</div>
+
+
+                      
+</a>
+                <a class="nav-link sidenav-sublink   inactive" data-block-id="307" href="https://learn.lewagon.com/c/2186/b/307">
+                  <div class="lesson-nav-item">
+    <span class="block-emoji-icon">
+        📝
+    </span>
+
+  <span class="nav-link-text ml-1">
+    Profile with a fixed sidebar
+  </span>
+</div>
+
+
+                      
+</a>            </nav>
+        </nav>
+
+  </section>
+
+</nav>
+
+
+  <!-- block -->
+  <main>
+    <div data-action="click-&gt;toggle-sidenav#toggleSidenav" data-target="toggle-sidenav.icon" class="sidenav-toggle d-flex d-sm-none align-items-center justify-content-center">
+      <i class="mdi mdi-backburger"></i>
+    </div>
+    <header class="white-block-header ">
+      <div class="flex-center">
+          <a class="btn btn-nav-block" data-controller="utilities--tooltips" data-title="Design your profile" href="https://learn.lewagon.com/c/2186/b/304" data-original-title="" title="">
+            <i class="fas fa-arrow-left"></i>
+</a>
+          <h2>Media queries in CSS</h2>
+      </div>
+
+      <div class="d-flex">
+
+          <a class="btn btn-nav-block" data-controller="utilities--tooltips" data-title="Build a responsive container" href="https://learn.lewagon.com/c/2186/b/308" data-original-title="" title="">
+            <i class="fas fa-arrow-right"></i>
+</a>      </div>
+    </header>
+
+      <div class="video-wrapper">
+    <p></p><p>Learn all about Responsive design and how to code responsive websites using media queries in your CSS.</p>
+<p></p>
+
+    <div tabindex="0" class="plyr plyr--full-ui plyr--video plyr--vimeo plyr--fullscreen-enabled plyr--paused"><div class="plyr__controls"><button class="plyr__controls__item plyr__control" type="button" data-plyr="play" aria-label="Play"><svg class="icon--pressed" aria-hidden="true" focusable="false"><use href="#plyr-pause"></use></svg><svg class="icon--not-pressed" aria-hidden="true" focusable="false"><use href="#plyr-play"></use></svg><span class="label--pressed plyr__sr-only">Pause</span><span class="label--not-pressed plyr__sr-only">Play</span></button><div class="plyr__controls__item plyr__progress__container"><div class="plyr__progress"><input data-plyr="seek" type="range" min="0" max="100" step="0.01" value="0" autocomplete="off" role="slider" aria-label="Seek" aria-valuemin="0" aria-valuemax="418.4" aria-valuenow="344.395" id="plyr-seek-706" aria-valuetext="05:44 of 06:58" style="--value:82.31%;" seek-value="13.843545648233931"><progress class="plyr__progress__buffer" min="0" max="100" value="87" role="progressbar" aria-hidden="true">% buffered</progress><span class="plyr__tooltip" style="left: 1.61172%;">00:06</span></div></div><div class="plyr__controls__item plyr__time--current plyr__time" aria-label="Current time">-01:14</div><div class="plyr__controls__item plyr__volume"><button type="button" class="plyr__control" data-plyr="mute"><svg class="icon--pressed" aria-hidden="true" focusable="false"><use href="#plyr-muted"></use></svg><svg class="icon--not-pressed" aria-hidden="true" focusable="false"><use href="#plyr-volume"></use></svg><span class="label--pressed plyr__sr-only">Unmute</span><span class="label--not-pressed plyr__sr-only">Mute</span></button><input data-plyr="volume" type="range" min="0" max="1" step="0.05" value="1" autocomplete="off" role="slider" aria-label="Volume" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100" id="plyr-volume-706" aria-valuetext="100.0%" style="--value:100%;"></div><button class="plyr__controls__item plyr__control" type="button" data-plyr="captions"><svg class="icon--pressed" aria-hidden="true" focusable="false"><use href="#plyr-captions-on"></use></svg><svg class="icon--not-pressed" aria-hidden="true" focusable="false"><use href="#plyr-captions-off"></use></svg><span class="label--pressed plyr__sr-only">Disable captions</span><span class="label--not-pressed plyr__sr-only">Enable captions</span></button><div class="plyr__controls__item plyr__menu"><button aria-haspopup="true" aria-controls="plyr-settings-706" aria-expanded="false" type="button" class="plyr__control" data-plyr="settings"><svg aria-hidden="true" focusable="false"><use href="#plyr-settings"></use></svg><span class="plyr__sr-only">Settings</span></button><div class="plyr__menu__container" id="plyr-settings-706" hidden=""><div><div id="plyr-settings-706-home"><div role="menu"><button data-plyr="settings" type="button" class="plyr__control plyr__control--forward" role="menuitem" aria-haspopup="true" hidden=""><span>Captions<span class="plyr__menu__value">Disabled</span></span></button><button data-plyr="settings" type="button" class="plyr__control plyr__control--forward" role="menuitem" aria-haspopup="true" hidden=""><span>Quality<span class="plyr__menu__value">undefined</span></span></button><button data-plyr="settings" type="button" class="plyr__control plyr__control--forward" role="menuitem" aria-haspopup="true"><span>Speed<span class="plyr__menu__value">2×</span></span></button></div></div><div id="plyr-settings-706-captions" hidden=""><button type="button" class="plyr__control plyr__control--back"><span aria-hidden="true">Captions</span><span class="plyr__sr-only">Go back to previous menu</span></button><div role="menu"></div></div><div id="plyr-settings-706-quality" hidden=""><button type="button" class="plyr__control plyr__control--back"><span aria-hidden="true">Quality</span><span class="plyr__sr-only">Go back to previous menu</span></button><div role="menu"></div></div><div id="plyr-settings-706-speed" hidden=""><button type="button" class="plyr__control plyr__control--back"><span aria-hidden="true">Speed</span><span class="plyr__sr-only">Go back to previous menu</span></button><div role="menu"><button data-plyr="speed" type="button" role="menuitemradio" class="plyr__control" aria-checked="false" value="1"><span>Normal</span></button><button data-plyr="speed" type="button" role="menuitemradio" class="plyr__control" aria-checked="false" value="1.25"><span>1.25×</span></button><button data-plyr="speed" type="button" role="menuitemradio" class="plyr__control" aria-checked="false" value="1.5"><span>1.5×</span></button><button data-plyr="speed" type="button" role="menuitemradio" class="plyr__control" aria-checked="false" value="1.75"><span>1.75×</span></button><button data-plyr="speed" type="button" role="menuitemradio" class="plyr__control" aria-checked="true" value="2"><span>2×</span></button></div></div></div></div></div><button class="plyr__controls__item plyr__control" type="button" data-plyr="pip"><svg aria-hidden="true" focusable="false"><use href="#plyr-pip"></use></svg><span class="plyr__sr-only">PIP</span></button><button class="plyr__controls__item plyr__control plyr__control--pressed" type="button" data-plyr="fullscreen"><svg class="icon--pressed" aria-hidden="true" focusable="false"><use href="#plyr-exit-fullscreen"></use></svg><svg class="icon--not-pressed" aria-hidden="true" focusable="false"><use href="#plyr-enter-fullscreen"></use></svg><span class="label--pressed plyr__sr-only">Exit fullscreen</span><span class="label--not-pressed plyr__sr-only">Enter fullscreen</span></button></div><div class="plyr__video-wrapper plyr__video-embed" style=""><div class="plyr__video-embed__container" style="transform: translateY(-36.9792%); max-width: 1309.09px; margin: 0px auto;"><iframe src="./Media queries in CSS_files/291943003.html" allowfullscreen="" allow="autoplay; fullscreen; picture-in-picture" title="Player for media-queries" data-ready="true" tabindex="-1"></iframe></div><div class="plyr__poster" hidden=""></div></div><div class="plyr__captions"></div><button type="button" class="plyr__control plyr__control--overlaid" data-plyr="play" aria-label="Play"><svg aria-hidden="true" focusable="false"><use href="#plyr-play"></use></svg><span class="plyr__sr-only">Play</span></button></div>
+
+  <a class="btn btn-primary mb-4 block-cta-button disabled  mt-5" style="width: 114px" data-action="click-&gt;students--enrollment-cable#createCtaCompletion" data-target="students--enrollment-cable.markAsSeenBtn" href="https://learn.lewagon.com/c/2186/b/324">Seen</a>
+
+</div>
+
+  </main>
+</div>
+
+
+    </div>
+  
+
+</body></html>
